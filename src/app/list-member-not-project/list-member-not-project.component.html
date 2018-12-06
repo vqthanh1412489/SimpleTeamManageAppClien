@@ -1,0 +1,3 @@
+<div *ngFor="let user of (notUsers$ | async)">
+  <app-user-not-project [userInfor]="user" >{{user.name}}</app-user-not-project>
+</div>

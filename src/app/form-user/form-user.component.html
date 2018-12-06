@@ -1,0 +1,41 @@
+<!-- <form (ngSubmit)="onSubmit();" [formGroup]="formAddUser">
+  <input placeholder="Email" formControlName="email">
+  <br><br>
+  <input type="password" placeholder="Password" formControlName="password">
+  <br><br>
+  <input placeholder="Name" formControlName="name">
+  <br><br>
+  <button>Sign Up</button>
+</form> -->
+
+<div class="container">
+  <div class="row">
+      
+    <div class="col-md-12">
+      <form (ngSubmit)="onSubmit();" [formGroup]="formAddUser">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword2">Your Name</label>
+          <input formControlName="name" class="form-control" id="exampleInputPassword2" placeholder="Your Name">
+        </div>
+        <button class="btn btn-success" [disabled]="!formAddUser.valid">Create Member</button>
+      </form>
+      <div *ngIf="isSucess" class="alert alert-success" role="alert">
+          <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <div *ngIf="isError" class="alert alert-danger" role="alert">
+          <strong>Oh snap!</strong> Change a few things up and try submitting again.
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+a {
+    display: inline-block;
+    padding: 20px;
+} 
+
+.divTitle {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.divTutorial {
+    color: green;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#divHome {
+    color:green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+}

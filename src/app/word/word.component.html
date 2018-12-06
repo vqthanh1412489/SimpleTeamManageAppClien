@@ -1,0 +1,27 @@
+<!-- <div>
+  <h1>{{word.name}}</h1>
+  <button (click)="showDetail()">{{ nameButton }}</button>
+  <button (click)="addUserToProject()">Add User To Project</button>
+
+  <div *ngIf="isShowDetail">
+    <p>{{ word.name }}</p>
+    <p>{{ word.des }}</p>
+    <p>{{ word.users }}</p>
+  </div>
+</div>
+ -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="list-group">
+        <button (click)="showDetail()" type="button" class="list-group-item list-group-item-action">{{word.name}}</button>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="list-group">
+          <button (click)="addUserToProject()" class="btn btn-primary">Manage</button>
+      </div>
+    </div>
+  </div>
+</div>
